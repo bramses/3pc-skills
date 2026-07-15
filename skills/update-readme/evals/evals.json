@@ -1,0 +1,31 @@
+{
+  "skill_name": "update-readme",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Can you help me update the README for my project? It's at https://github.com/bramses/reading-is-a-system. I haven't touched the README in a while and I'm not sure it explains the project well anymore. A light scan of the code is fine, I don't need you to go deep on every file.",
+      "expected_output": "Claude clones/reads the repo at a light-scan depth (manifests, top-level structure, entry points), reads the existing README, fetches the Awesome README list, picks a genuinely comparable example project, fetches that example's actual README, and shares a conversational assessment (gaps + 2-4 concrete borrowed techniques + which reference project and why) before drafting any rewrite. It should not silently rewrite the file without walking through this reasoning first.",
+      "files": [],
+      "expectations": [
+        "readme_draft.md exists and contains a substantive, non-trivial README (not a stub or placeholder)",
+        "assessment.md names a specific example project actually fetched from the Awesome README list (matiassingers/awesome-readme), not just a link to the list itself, and explains why it's a reasonable comparison for this project",
+        "assessment.md cites specific, concrete details from the actual reading-is-a-system codebase rather than generic advice that could apply to any project",
+        "The output shows findings/rationale being surfaced before the final draft, not a silently produced rewrite with no explanation",
+        "readme_draft.md does not claim features, commands, or usage that don't actually exist in the reading-is-a-system repo"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to overhaul the README for https://github.com/bramses/chatgpt-md. Do a deep scan this time, I want to make sure any usage examples and commands we show actually match what the plugin does today before we rewrite anything.",
+      "expected_output": "Claude reads the actual source (not just manifests) to verify README claims/usage examples are accurate, flags any that are stale relative to the current code, still does the Awesome README comparison step, and proposes a draft conversationally rather than immediately overwriting README.md.",
+      "files": [],
+      "expectations": [
+        "transcript_notes.md shows actual source files were read, confirming a genuine deep scan rather than a light scan",
+        "assessment.md flags at least one specific instance where the existing README's usage examples/commands no longer match the current chatgpt-md source, OR explicitly states none were found and cites what was checked",
+        "assessment.md names a specific example project actually fetched from the Awesome README list, not just a link to the list, and explains why it's a reasonable comparison",
+        "readme_draft.md's usage examples and commands match what the current chatgpt-md source actually supports",
+        "The output shows findings/rationale being surfaced before the final draft, not a silently produced rewrite with no explanation"
+      ]
+    }
+  ]
+}
