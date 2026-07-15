@@ -1,0 +1,22 @@
+[
+  {"query": "hey can you take a look at my repo and help me fix up the readme, it's pretty out of date compared to what the code actually does now", "should_trigger": true},
+  {"query": "I'm about to open source this internal tool at ~/projects/pdf-merger and I want the README to actually look legit before I post it on HN", "should_trigger": true},
+  {"query": "does my project's readme explain what it does well? genuinely not sure a stranger would get it", "should_trigger": true},
+  {"query": "can you go through my chatgpt-md obsidian plugin repo and see if the docs are still accurate, i think ive added like 3 new providers since i last touched the readme", "should_trigger": true},
+  {"query": "I want to make my project's github page look more professional, like polish the front door basically", "should_trigger": true},
+  {"query": "our internal wiki page for the ingest-pipeline repo just links to the readme and I think it's confusing new hires, can you help make it clearer", "should_trigger": true},
+  {"query": "check out github.com/foo/bar and tell me if the readme actually matches what's in src/, I suspect it's stale", "should_trigger": true},
+  {"query": "can we redo the readme for my side project so it's more like the really good ones people star on github", "should_trigger": true},
+  {"query": "I just want a second pair of eyes on whether my repo's onboarding docs (readme) would make sense to someone landing on it cold", "should_trigger": true},
+  {"query": "help me write a better readme.md for my cli tool, want it to look as polished as some popular npm packages", "should_trigger": true},
+  {"query": "can you write a README.md for this brand new empty repo, there's no code yet, just scaffold something generic", "should_trigger": false},
+  {"query": "can you update the CONTRIBUTING.md for my project to add a section on code style", "should_trigger": false},
+  {"query": "explain what a good README should include, in general", "should_trigger": false},
+  {"query": "just fix the typo in my readme, line 42 says 'recieve' instead of 'receive'", "should_trigger": false},
+  {"query": "can you add a badge showing our CI build status to the readme", "should_trigger": false},
+  {"query": "review my package.json and see if the dependencies are up to date", "should_trigger": false},
+  {"query": "help me write release notes for v2.3.0 based on the recent commits", "should_trigger": false},
+  {"query": "can you check if my repo's LICENSE file is the right one for an MIT-licensed open source project", "should_trigger": false},
+  {"query": "generate API documentation from my TypeScript JSDoc comments for the docs site", "should_trigger": false},
+  {"query": "we're evaluating whether to open source this — can you assess the codebase for any obvious security issues before we do", "should_trigger": false}
+]
