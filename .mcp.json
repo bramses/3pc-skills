@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "mta-nyc-transit": {
-      "url": "https://subwayinfo.nyc/mcp"
-    }
-  }
-}
