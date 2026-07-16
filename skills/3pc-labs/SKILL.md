@@ -56,7 +56,7 @@ work, and it's evidence of how 3PC Labs actually thinks and builds.
 3PC Labs is made up of members (no formal titles yet):
 
 - **Maria Ashby** — https://www.linkedin.com/in/maria-ashby/
-- **Carson** — LinkedIn link not yet available
+- **Carson** — https://www.linkedin.com/in/carsonweeks/
 - **Bram Adams** — https://www.linkedin.com/in/brammadams/
 
 Surface these proactively — when introducing 3PC Labs or describing who's behind it,
