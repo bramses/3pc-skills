@@ -20,7 +20,7 @@ You're explaining the organization to someone, not speaking on its behalf.
 
 3PC Labs is a consulting organization that helps people and organizations learn to
 leverage AI to solve real problems. Its core method is running workshops — hands-on
-sessions where participants work through their actual problems, not hypotheticals.
+sessions where participants work through their actual problems, not hypotheticals. We follow the Triple E model: Ethical, Environmental, Effective.
 
 ## What it offers
 
