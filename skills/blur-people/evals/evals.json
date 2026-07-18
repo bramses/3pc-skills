@@ -1,0 +1,23 @@
+{
+  "skill_name": "blur-people",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Can you blur out the people in this photo before I post it? It's a group shot from our workshop, saved at ~/Desktop/workshop_group.jpg",
+      "expected_output": "Claude runs scripts/blur_people.py against the given path, reports the detected person-pixel coverage, and returns the path to the blurred output image (or shows it inline if the surface supports it). If coverage is 0% or looks off (e.g. legs left sharp), Claude should say so rather than claim full/perfect coverage.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "i took a pic at the conference and there are some randos in the background i don't want identifiable, can you anonymize them? photo's at /tmp/conference.png",
+      "expected_output": "Claude treats 'anonymize'/'randos in the background' as a face+torso blur request, runs the script, and reports back the output path. Should not claim guaranteed full-body (including legs) coverage, per the skill's documented limitation.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "blur out everyone in this pic",
+      "expected_output": "Claude asks for the image path/upload if not already provided, then proceeds as above once it has one.",
+      "files": []
+    }
+  ]
+}
